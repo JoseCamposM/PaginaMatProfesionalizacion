@@ -8,7 +8,9 @@ body {
     overflow: auto; /* se añade una barra de desplazamiento si el contenido excede las dimensiones */
     word-wrap: break-word;
 }
-
+html {
+  font-size: 16px;
+}
 header{
     background-image: url("../img/fondo-pagina.png");
     background-position: top center;
