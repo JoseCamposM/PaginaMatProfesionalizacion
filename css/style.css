@@ -4,14 +4,17 @@
 }
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: auto; /* se añade una barra de desplazamiento si el contenido excede las dimensiones */
     word-wrap: break-word;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-size: cover;
 }
 
 html {
     font-size: 16px;
-  }
+}
+
 header{
     background-image: url("../img/fondo-pagina.png");
     background-position: top center;
@@ -80,24 +83,26 @@ a:hover {
 
 }
 
-
-
 #tTramites{
     font-size: 2rem;
     text-align: center;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
+
 
 #tramites{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    border-radius: 2%;
 }
 
-.box-contenido {
-    font-size: 1rem;
-    padding: 50px;
-    width: 50%;
-    font-size: 1.8rem ;
+.box-contenido{
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 33.33%;
+    min-height: 20vh;
 }
 
 iframe {
@@ -120,213 +125,58 @@ iframe {
 }
 
 
+@media only screen and (max-width: 900px) {
 
-
-
-
-@media only screen and (max-width: 821px) {
-    header{
-        height: 50vh;
+    h1{
+        font-size: 1.6rem;
     }
-    nav {
-        background-color: #23254b; /* Establece el color de fondo del nav */
-        padding: 10px; /* Agrega un espacio de 10px alrededor del contenido del nav */
-        height: 10vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
+    nav ul{
+        font-size: 1.5rem;
     }
-    
-    
-h1{
-    font-size: 2rem;
-}
-nav ul{
-    font-size: 2.5rem;
-}
-    .contenido{
-        font-size: 2rem;
-        display: flex;
-        flex-direction: column;
+
+    .box-contenido{
+        width: 50%;  
     }
-    
+
     .box{
+        font-size: .9rem;
+        height: 110vh;
         padding: 50px;
-        width: 100%;
     }
-    
 
-#tTramites{
-    font-size: 2rem;
-    text-align: center;
-}
+    #footer{
+        font-size: .9rem;
+        height: 30vh;
+    }
 
-#tramites{
-    font-size: 2rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  
-}
-
-.box-contenido {
-    font-size: 1.2rem;
-    padding: 50px;
-    width: 33.333%;
-    height: 80vh;
-}
-
-
-
-
-#tTramites{
-    font-size: 2rem;
-    text-align: center;
-}
-
-#tramites{
-    width: 100%;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    #direccion{
+        height: 140vh;
+    }
 
 }
 
-.box-contenido {
-    width: 100%;
-}
+@media only screen and (max-width: 690px) {
+    .box-contenido{
+        width: 100%;  
+    }
 
-#ratFirma{
-    height: 15vh;
-}
-
-#juicioIntes{
-    height: 35vh;
-}
-
-#certDocument{
-    height: 25vh;
-}
-
-#juicSuctest{
-    height: 35vh;
-}
-
-#donacion{
-    height: 35vh;
-}
-
-#cv {
-    height: 35vh;
-}
-
-#footer{
-
-    padding: 20px;
-    font-size: 1.3rem;
-    text-align: center;
-    height: 30vh;
-}
-
-}
-
-
-@media only screen and (max-width: 576px) {
-    header{
-            height: 50vh; 
-        }
-    nav {
-            background-color: #23254b; /* Establece el color de fondo del nav */
-            padding: 10px; /* Agrega un espacio de 10px alrededor del contenido del nav */
-           
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            
-        }
-        
-        
     h1{
         font-size: 1.2rem;
     }
     nav ul{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
-    .contenido{
-            font-size: 1rem;
-            display: flex;
-            flex-direction: column;
-        }
-        
+
     .box{
-            padding: 50px;
-            width: 100%;
-        }
-    
-    
-    
-    
-    
-    
-        #tTramites{
-            font-size: 2rem;
-            text-align: center;
-        }
-        
-        #tramites{
-            font-size: 1rem;
-           
-            width: 100%;
-    
-            display: flex;    
-            flex-direction: column;
-        }
-        
-        .box-contenido {
-            width: 100%;
-            font-size: 1rem;
-        }
-        
-        #ratFirma{
-            height: 30vh;
-            font-size: 1rem;
-        }
-        
-        #juicioIntes{
-            height: 50vh;
-            font-size: 1rem;
-        }
-        
-        #certDocument{
-            height: 45vh;
-            font-size: 1rem;
-        }
-        
-        #juicSuctest{
-            height: 55vh;
-            font-size: 1rem;
-        }
-        
-        #donacion{
-            height: 55vh;
-            font-size: 1rem;
-        }
-        
-        #cv {
-            height: 55vh;
-            font-size: 1rem;
-        }
-        
-
-
-        #footer{
-
-            padding: 20px;
-            font-size: .8rem;
-            text-align: center;
-            height: 30vh;
-        }
+        font-size: .9rem;
+        height: 110vh;
+        padding: 20px;
     }
-    
+}
+
+
+
+
+
+
+
