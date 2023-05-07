@@ -31,7 +31,7 @@ h1{
 nav {
     background-color: #23254b; /* Establece el color de fondo del nav */
     padding: 10px; /* Agrega un espacio de 10px alrededor del contenido del nav */
-    height: 10vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     
