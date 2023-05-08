@@ -62,7 +62,6 @@ a:hover {
 }
 
 .contenido{
-
     display: flex;
     flex-direction: row;
 }
@@ -79,7 +78,7 @@ a:hover {
 #imagen-notaria{
 
     padding: 100px;
-    height: auto;
+    width: 100%;
     background-image: url("../img/calidad.png");
     background-position: top center;
     background-repeat: no-repeat;
@@ -92,7 +91,6 @@ a:hover {
     text-align: center;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
-
 
 #tramites{
     width: 100%;
@@ -131,7 +129,8 @@ iframe {
 }
 
 #Nosotros{
-
+    width: 100%;
+    font-size: 1.8rem;
     height: auto;
     word-wrap: break-word;
 }
@@ -159,15 +158,19 @@ iframe {
     }
 
     #footer{
-        font-size: .9rem;
+        font-size: 1.4rem;
         height: 30vh;
     }
 
+    #contNosotros{
+        width: 100%;
+        display: flex;
+        flex-direction: column ;
+    }
 }
 
 @media only screen and (max-width: 690px) {
 
- 
 
     .box-contenido{
         width: 100%;  
@@ -185,11 +188,13 @@ iframe {
         height: 110vh;
         padding: 9px;
     }
+    #Nosotros{
+        padding: 30px;
+        font-size: .9rem;
+    }
+    #footer{
+        font-size: .8rem;
+        height: 30vh;
+    }
 }
-
-
-
-
-
-
 
